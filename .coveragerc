@@ -1,0 +1,6 @@
+[run]
+omit =
+    bugmenot/__main__.py
+    venv/*
+    tests/*
+    setup.py
