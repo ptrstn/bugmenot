@@ -11,7 +11,7 @@ An unofficial Python package to retrieve credentials from [BugMeNot.com](http://
 ## Installation
 
 ```bash
-pip install --user git+https://github.com/ptrstn/bugmenot
+pip install bugmenot
 ```
 
 ## Usage
