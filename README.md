@@ -1,3 +1,4 @@
+[![Actions Status](https://github.com/ptrstn/bugmenot/workflows/Python%20package/badge.svg)](https://github.com/ptrstn/bugmenot/actions)
 [![Build Status](https://travis-ci.com/ptrstn/bugmenot.svg?branch=master)](https://travis-ci.com/ptrstn/bugmenot)
 [![codecov](https://codecov.io/gh/ptrstn/bugmenot/branch/master/graph/badge.svg)](https://codecov.io/gh/ptrstn/bugmenot)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
