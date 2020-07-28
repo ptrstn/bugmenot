@@ -20,11 +20,17 @@ def find_version(*file_paths):
     raise RuntimeError("Unable to find version string.")
 
 
+with open("README.md", "r") as readme:
+    long_description = readme.read()
+
 setup(
     name="bugmenot",
     version=find_version("bugmenot", "__init__.py"),
     url="http://github.com/ptrstn/bugmenot",
     author="Peter Stein",
+    description="Unofficial Python package to retrieve credentials from BugMeNot.com",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     license="Unlicense",
     packages=["bugmenot"],
     install_requires=["requests", "beautifulsoup4"],
