@@ -1,9 +1,8 @@
 import argparse
 
-import pandas
-
 import bugmenot
 from bugmenot import __version__
+from bugmenot.utils import print_as_table
 
 
 def parse_arguments():
@@ -22,7 +21,7 @@ def main():
     args = parse_arguments()
     website = args.url
     credentials = bugmenot.get_credentials(website)
-    print(pandas.DataFrame(credentials))
+    print_as_table(credentials)
 
 
 if __name__ == "__main__":

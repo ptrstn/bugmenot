@@ -27,6 +27,12 @@ setup(
     author="Peter Stein",
     license="Unlicense",
     packages=["bugmenot"],
-    install_requires=["requests", "beautifulsoup4", "pandas"],
+    install_requires=["requests", "beautifulsoup4"],
     entry_points={"console_scripts": ["bugmenot=bugmenot.__main__:main"]},
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: Public Domain",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.6",
 )

@@ -15,10 +15,19 @@ pip install --user git+https://github.com/ptrstn/bugmenot
 
 ## Usage
 
-### Command Line
+### Command-line
 
 ```bash
-bugmenot <url>
+usage: bugmenot [-h] [--version] url
+
+An unofficial BugMeNot.com client
+
+positional arguments:
+  url         URL to the website
+
+optional arguments:
+  -h, --help  show this help message and exit
+  --version   show program's version number and exit
 ```
 
 ### Python
@@ -26,4 +35,22 @@ bugmenot <url>
 ```python
 import bugmenot
 credentials = bugmenot.get_credentials("<your-website>")
+```
+
+## Example
+
+This command returns a list of (subsequently anonymized) bugmenot.com entries in tabular form:
+
+```bash
+bugmenot oracle.com
+```
+
+```bash
+                               username                   password success_rate votes       age 
+             fake-example@gvnuclear.com                  BugMeNot3          85%  1555  2 months 
+           fake-example-fake-@awdrt.org             sdfdsfdsfd&-45          71%  2130  2 months 
+              fake-example-a@wizard.com       sdfdsfdsfdsfsfsdfsdd          60% 13053    1 year 
+                     fake-exa@urhen.com        asdfdsafasdfadsfass          60% 11261 12 months 
+              fake-exam@rowingbreak.com        sffsdfdsfdsafasdfsa          59%  6274  8 months 
+another-fake-example-entry-123@mail.com                  Abcsdfklj          53% 14989   7 years 
 ```
